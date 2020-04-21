@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body,img,ul,li{  //去除浏览器默认的间距,下面有哪些一会再加上去
+				padding:0px;
+				margin:0px;
+			}
+			/* *{
+				padding:0px;
+				margin:0px; */  //这么写也可以,但是有点浪费资源,*代表所有属性
+			#heard{
+				width:100%;
+				height:40px;
+				/* background-color: red; */
+				border:1px solid #000;
+			}
+			a{
+				text-decoration:none;
+			}
+			.heard{
+				width:1200px;
+				height:40px;
+				/* background: green; */
+				border:1px solid red;
+				margin:0px auto;
+			}
+			.heard-left{
+				width:200px;
+				height:40px;
+				/* background: yellow; */
+				float:left;
+				border:1px solid aqua;
+			}
+			.heard-right{
+				width:200px;
+				height:40px;
+				background: pink;
+				float:right;
+				border:1px solid aquamarine;
+				
+			}
+			.heard-right>ul{
+				float:right;
+				
+			}
+			.heard-right>ul>li{
+				list-style:none;
+				float:left;
+				
+				
+			}
+			.heard-left>div{   //子代选择器
+				float:left;
+				/* background: #FFFF00; */
+				line-height: 40px;
+				
+			}
+			.heard-left>div>span{
+				font-weight: bold;
+			}
+			/* 头部选择器结束 */
+			/* logo选择器开始 */
+			#logo{
+				width:1200px;
+				height:120px;
+				border:1px solid red;
+				margin:0px auto;
+			}
+			.logo-left{
+				width:300px;
+				height:120px;
+				border:1px solid lawngreen;
+				float:left;
+				
+			}
+			.logo-right{
+				width:300px;
+				height:120px;
+				border:1px solid #7CFC00;
+				float:right;
+			}
+			#nav{
+				width:1200px;
+				height:45px;
+				border:1px solid plum;
+				margin:0px auto;
+				
+			}
+			.nav-left{
+				width: 300px;
+				height:45px;
+				border:1px solid palegreen;
+				float:left;
+				
+			}
+			/* .nav-center{
+				width:300px;
+				height:45px;
+				border:1px solid #FFC0CB;
+				float:left;
+			} */
+			.nav-right{
+				width:300px;
+				height:45px;
+				border:1px solid aqua;
+				float:right;
+			}
+			/* nav部分结束 */
+			/* banner部分开始 */
+			#content{
+				width:1200px;
+				height:500px;
+				border:1px solid darkmagenta;
+				margin:0px auto;
+				background-image: url(img/0.png);
+				position:relative;
+				
+			}
+			.banner-left{
+				width: 300px;
+				height: 45px;
+				border:1px solid #00FFFF;
+				float:left;
+			}
+			.banner-bottom{
+				
+			}
+			.banner-right{
+				width: 300px;
+				height: 45px;
+				border:1px solid bisque;
+				float:right;
+			}
+			#bottom{
+				width: 1200px;
+				height: 45px;
+				border:1px solid #000000;
+				margin:0 auto;
+				padding:1px;
+				
+			}
+			.bottom1{
+				width: 300px;
+				height: 45px;
+				border:1px solid aqua;
+				float:left;
+				padding:1px;
+				
+			}
+			.bottom2{
+				width: 300px;
+				height: 45px;
+				border:1px solid #FF0000;
+				float:left;
+				padding:1px;
+				
+			}
+			.bottom3{
+				width: 300px;
+				height: 45px;
+				border:1px solid #FF0000;
+				float:left;
+				padding:1px;
+				
+			}
+			/* .bottom4{
+				width: 300px;
+				height: 45px;
+				border:1px solid #FF0000;
+				float:right;
+			} */
+		</style>
+	</head>
+	<body>
+		<!-- 顶部标签开始 -->
+		<div id="heard">
+			
+			<div class="heard">
+				
+				<div class="heard-left">
+					
+					<div>
+						<span>IT</span>-精品学习网
+						<a href="">
+							<img src="img/0.png" alt="" width="20px" height="20px">核心产品
+						</a>
+						<div>
+							<ul>
+								<li><a href="#">链接1<img src="img/1.png" alt=""><span>Java工程师</span></a></li>
+							
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<div class="heard-right">
+					<ul>
+						<li><a href=""></a>欢迎</li>
+						<li><a href=""><img src="img/2.png" width="40px" height="40px" alt=""></a></li>
+						<li><a href=""></a>注册</li>
+						<li><a href=""></a>收藏</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+			<!-- 顶部标签结束 -->
+			<!-- logo部分开始-->
+			<div id="logo">
+				<div class="logo-left"></div>
+				<div class="logo-right"></div>
+			</div>
+			<!-- logo部分结束 -->
+		    <!-- nav导航栏开始 -->
+			<div id="nav">
+			    <div class="nav-left"></div>
+				<!-- <div class="nav-center"></div> -->
+				<div class="nav-right"></div>
+				
+			</div>
+			<!-- nav结束 -->
+			<!-- banner开始 -->
+			<div id="content">
+				<div class="banner-left"></div>
+				<div class="banner-right">
+					<div class="banner-top"></div>
+					<div class="banner-bottom"></div>
+				</div>
+			</div>
+			<!-- banner结束 -->
+			<!-- 底部开始 -->
+			<div id="bottom">
+				<div class="bottom1"></div>
+				<div class="bottom2"></div>
+				<div class="bottom3"></div><!-- 
+				<div class="bottom4"></div> -->
+			</div>
+	</body>
+</html>
