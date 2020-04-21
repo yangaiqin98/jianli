@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+    <style type="text/css">
+    *{
+		margin: 0;
+        padding: 0;
+    }
+	.head{    
+		text-align:center;
+        background-color: rgb(104,58,201);
+	}
+    .head,a{
+        height: 80px;
+
+    }
+	.fl{
+		float:left;
+	}
+	.fr{
+		float:right;
+	}
+	li{
+		list-style: none;
+		
+	}
+	ul a{
+		text-decoration:none;
+		font-size: 12px;
+		color:#999;
+		
+	}
+	.body{
+		background-color: #f6f6f6;
+	}
+	.heard{
+		height:80px;
+		background-color: plum;
+	}
+	.shortcut{  
+	    width: 1190px;
+        height: 30px;
+		background-color:papayawhip;
+		border:1px solid #ddd;
+		line-height: 30px;
+		font-size: 12px;
+		margin: 0 auto;
+        box-sizing: border-box;
+	
+	}
+	.shortcut li{
+		float:left;
+		
+	}
+	/* 小竖线 */
+	.space{  
+		width: 1px;
+		height: 10px;
+		background-color: #ccc;
+		margin:10px 12px 0;
+	}
+	.city{
+		margin-left:200px;
+		
+	}
+	</style>
+</head>
+<body>
+	<!-- heard部分开始 -->
+		<div class="head">
+			<a href="#"><img src="../images/top.png"></a>
+		</div>
+	<!-- heard部分结束 -->
+	<!-- 快速导航栏开始 -->
+	<div class="shortcut">
+			<ul class="fl city ">
+				<li>北京
+			</ul>
+			<ul class="fr">
+				<!-- 要让这些在一行上显示就写左浮动， -->
+				<li><a href="#">你好，请登录</a>  
+				<li><a href="#">免费注册</a>
+				<li class="space">
+				<li><a href="#">我的订单</a>
+				<li class="space"><li class="space">  
+				<li><a href="#">京东会员</a>
+				<li class="space">
+				<li><a href="#">客服服务</a>
+				<li class="space">
+				<li><a href="#">网站导肮</a>
+			</ul>
+		
+	</div>
+	<!-- 导航栏结束 -->
+</body>
